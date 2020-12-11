@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Determinant Calculator App</string>
+    <string name="creator_abbos_donaboyev">Creator: Abbos Donaboyev</string>
+    <string name="version_1_0_0">Version: 1.0.0</string>
+    <string name="last_updated_08_12_2020">Last updated: 08.12.2020</string>
+    <string name="ok">Ok</string>
+</resources>

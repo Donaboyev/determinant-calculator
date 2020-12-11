@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.donaboyev.determinantcalculatorapp.fragments.MainFragment"
+        android:label="Del Calculator"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_twoByTwoFragment"
+            app:destination="@id/twoByTwoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_threeByThreeFragment"
+            app:destination="@id/threeByThreeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fourByFourFragment"
+            app:destination="@id/fourByFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoByTwoFragment"
+        android:name="com.donaboyev.determinantcalculatorapp.fragments.TwoByTwoFragment"
+        android:label="2x2"
+        tools:layout="@layout/fragment_two_by_two">
+        <action
+            android:id="@+id/action_twoByTwoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="centerPosition"
+            app:argType="com.donaboyev.determinantcalculatorapp.data.Center" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeByThreeFragment"
+        android:name="com.donaboyev.determinantcalculatorapp.fragments.ThreeByThreeFragment"
+        android:label="3x3"
+        tools:layout="@layout/fragment_three_by_three">
+        <action
+            android:id="@+id/action_threeByThreeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="centerPosition"
+            app:argType="com.donaboyev.determinantcalculatorapp.data.Center" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourByFourFragment"
+        android:name="com.donaboyev.determinantcalculatorapp.fragments.FourByFourFragment"
+        android:label="4x4"
+        tools:layout="@layout/fragment_four_by_four">
+        <action
+            android:id="@+id/action_fourByFourFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="centerPosition"
+            app:argType="com.donaboyev.determinantcalculatorapp.data.Center" />
+    </fragment>
+</navigation>

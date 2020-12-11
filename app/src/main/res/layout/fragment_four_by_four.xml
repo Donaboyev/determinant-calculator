@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#287C2C">
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:background="#0F5912"
+        app:layout_constraintBottom_toBottomOf="@id/cvDetLayout"
+        app:layout_constraintEnd_toStartOf="@id/cvDetLayout"
+        app:layout_constraintTop_toTopOf="@id/cvDetLayout" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:background="#0F5912"
+        app:layout_constraintBottom_toBottomOf="@id/cvDetLayout"
+        app:layout_constraintStart_toEndOf="@id/cvDetLayout"
+        app:layout_constraintTop_toTopOf="@id/cvDetLayout" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDetLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="#549A57"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="4">
+
+            <EditText
+                android:id="@+id/etA11"
+                style="@style/EditTextStyle"
+                android:hint="a(1,1)" />
+
+            <EditText
+                android:id="@+id/etA12"
+                style="@style/EditTextStyle"
+                android:hint="a(1,2)" />
+
+            <EditText
+                android:id="@+id/etA13"
+                style="@style/EditTextStyle"
+                android:hint="a(1,3)" />
+
+            <EditText
+                android:id="@+id/etA14"
+                style="@style/EditTextStyle"
+                android:hint="a(1,4)" />
+
+            <EditText
+                android:id="@+id/etA21"
+                style="@style/EditTextStyle"
+                android:hint="a(2,1)" />
+
+            <EditText
+                android:id="@+id/etA22"
+                style="@style/EditTextStyle"
+                android:hint="a(2,2)" />
+
+            <EditText
+                android:id="@+id/etA23"
+                style="@style/EditTextStyle"
+                android:hint="a(2,3)" />
+
+            <EditText
+                android:id="@+id/etA24"
+                style="@style/EditTextStyle"
+                android:hint="a(2,4)" />
+
+            <EditText
+                android:id="@+id/etA31"
+                style="@style/EditTextStyle"
+                android:hint="a(3,1)" />
+
+            <EditText
+                android:id="@+id/etA32"
+                style="@style/EditTextStyle"
+                android:hint="a(3,2)" />
+
+            <EditText
+                android:id="@+id/etA33"
+                style="@style/EditTextStyle"
+                android:hint="a(3,3)" />
+
+            <EditText
+                android:id="@+id/etA34"
+                style="@style/EditTextStyle"
+                android:hint="a(3,4)" />
+
+            <EditText
+                android:id="@+id/etA41"
+                style="@style/EditTextStyle"
+                android:hint="a(4,1)" />
+
+            <EditText
+                android:id="@+id/etA42"
+                style="@style/EditTextStyle"
+                android:hint="a(4,2)" />
+
+            <EditText
+                android:id="@+id/etA43"
+                style="@style/EditTextStyle"
+                android:hint="a(4,3)" />
+
+            <EditText
+                android:id="@+id/etA44"
+                style="@style/EditTextStyle"
+                android:hint="a(4,4)" />
+
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalculate"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="26dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@id/cvDetLayout"
+        app:layout_constraintTop_toBottomOf="@id/cvDetLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReset"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="16dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@id/btnCalculate"
+        app:layout_constraintTop_toTopOf="@id/btnCalculate" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/TitleStyle"
+        android:layout_marginTop="40dp"
+        android:maxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculate"
+        tools:text="2305390" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
