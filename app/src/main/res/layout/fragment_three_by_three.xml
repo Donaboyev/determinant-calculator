@@ -45,47 +45,47 @@
             <EditText
                 android:id="@+id/etA11"
                 style="@style/EditTextStyle"
-                android:hint="a(1,1)" />
+                android:hint="@string/a_1_1" />
 
             <EditText
                 android:id="@+id/etA12"
                 style="@style/EditTextStyle"
-                android:hint="a(1,2)" />
+                android:hint="@string/a_1_2" />
 
             <EditText
                 android:id="@+id/etA13"
                 style="@style/EditTextStyle"
-                android:hint="a(1,3)" />
+                android:hint="@string/a_1_3" />
 
             <EditText
                 android:id="@+id/etA21"
                 style="@style/EditTextStyle"
-                android:hint="a(2,1)" />
+                android:hint="@string/a_2_1" />
 
             <EditText
                 android:id="@+id/etA22"
                 style="@style/EditTextStyle"
-                android:hint="a(2,2)" />
+                android:hint="@string/a_2_2" />
 
             <EditText
                 android:id="@+id/etA23"
                 style="@style/EditTextStyle"
-                android:hint="a(2,3)" />
+                android:hint="@string/a_2_3" />
 
             <EditText
                 android:id="@+id/etA31"
                 style="@style/EditTextStyle"
-                android:hint="a(3,1)" />
+                android:hint="@string/a_3_1" />
 
             <EditText
                 android:id="@+id/etA32"
                 style="@style/EditTextStyle"
-                android:hint="a(3,2)" />
+                android:hint="@string/a_3_2" />
 
             <EditText
                 android:id="@+id/etA33"
                 style="@style/EditTextStyle"
-                android:hint="a(3,3)" />
+                android:hint="@string/a_3_3" />
 
         </GridLayout>
 
@@ -95,7 +95,7 @@
         android:id="@+id/btnCalculate"
         style="@style/ButtonStyle"
         android:layout_marginTop="26dp"
-        android:text="Calculate"
+        android:text="@string/calculate"
         app:layout_constraintStart_toStartOf="@id/cvDetLayout"
         app:layout_constraintTop_toBottomOf="@id/cvDetLayout" />
 
@@ -103,7 +103,7 @@
         android:id="@+id/btnReset"
         style="@style/ButtonStyle"
         android:layout_marginStart="16dp"
-        android:text="Reset"
+        android:text="@string/reset"
         app:layout_constraintStart_toEndOf="@id/btnCalculate"
         app:layout_constraintTop_toTopOf="@id/btnCalculate" />
 

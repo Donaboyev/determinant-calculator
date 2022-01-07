@@ -4,4 +4,20 @@
     <string name="version_1_0_0">Version: 1.0.0</string>
     <string name="last_updated_08_12_2020">Last updated: 08.12.2020</string>
     <string name="ok">Ok</string>
+    <string name="two_by_two">2x2</string>
+    <string name="select_order">SELECT ORDER</string>
+    <string name="three_by_three">3x3</string>
+    <string name="four_by_four">4x4</string>
+    <string name="a_1_1">a(1,1)</string>
+    <string name="a_1_2">a(1,2)</string>
+    <string name="a_1_3">a(1,3)</string>
+    <string name="a_2_1">a(2,1)</string>
+    <string name="a_2_2">a(2,2)</string>
+    <string name="a_2_3">a(2,3)</string>
+    <string name="a_3_1">a(3,1)</string>
+    <string name="a_3_2">a(3,2)</string>
+    <string name="a_3_3">a(3,3)</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="info">Info</string>
 </resources>

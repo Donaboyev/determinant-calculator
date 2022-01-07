@@ -1,14 +1,15 @@
 package com.donaboyev.determinantcalculatorapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.ViewTreeObserver
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.widget.ConstraintLayout
 import kotlinx.android.synthetic.main.activity_splash.*
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +34,6 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-                Log.d("TTTT", "onCreate:  onTransitionCompleted ni ichida")
                 startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             }
 

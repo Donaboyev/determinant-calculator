@@ -10,7 +10,7 @@
         style="@style/TitleStyle"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
-        android:text="SELECT ORDER"
+        android:text="@string/select_order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,7 +19,7 @@
         android:id="@+id/btnTwoByTwo"
         style="@style/ButtonStyle"
         android:layout_marginTop="40dp"
-        android:text="2x2"
+        android:text="@string/two_by_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvMainTitle" />
@@ -28,7 +28,7 @@
         android:id="@+id/btnThreeByThree"
         style="@style/ButtonStyle"
         android:layout_marginTop="20dp"
-        android:text="3x3"
+        android:text="@string/three_by_three"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnTwoByTwo" />
@@ -37,7 +37,7 @@
         android:id="@+id/btnFourByFour"
         style="@style/ButtonStyle"
         android:layout_marginTop="20dp"
-        android:text="4x4"
+        android:text="@string/four_by_four"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnThreeByThree" />
